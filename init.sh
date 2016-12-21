@@ -1,6 +1,6 @@
 #!/bin/bash
 yum -y update
-yum -y install httpd git
+yum -y install httpd24 git
 chkconfig httpd on
 yum install -y php56 php56-cli php56-common php56-devl php56-gd php56-jsonc php56-mbstring php56-mcrypt php56-pdo php56-opcache php56-pecl-imagick php56-xml php56-soap php56-xml php56-xmlrpc php56-mysqlnd
 yum install -y mysql
