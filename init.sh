@@ -8,4 +8,5 @@ cd /var/www/ && git clone https://github.com/neldridge/neldridge.net.git
 cd /etc/httpd/conf.d/ && ln -s /var/www/neldridge.net/neldridge.net.conf
 rm /etc/httpd/conf.d/welcome.conf
 service httpd start
-
+echo 'MAILTO=nicholas.eldridge@gmail.com' >> /etc/crontab
+echo '*/5  *  *  *  * root cd /var/www/neldridge.net && /usr/bin/git pull 2>&1 >/dev/null' >> /etc/crontab
