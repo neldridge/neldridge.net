@@ -22,7 +22,7 @@
 	],
 	"provisioners": [{
 		"type": "shell",
-		"script": "provision-script.sh"
+		"script": "packer/provision-script.sh"
 	}],
 	"post-processors": [{
 		"type": "manifest",
