@@ -7,9 +7,9 @@ while [[ `/sbin/runlevel | cut -d " " -f 2` != 3 ]]; do
 	sleep 1
 done
 
+sudo yum -y update
 sudo yum -y install httpd24 httpd24-tools mod24_ssl
-#sudo yum -y update
-#sudo yum -y install php70 php70-cli php70-common php70-devel php70-json php70-mbstring php70-mcrypt php70-odbc php70-opcache php70-pdo php70-pecl-apcu php70-pecl-apcu-devel php70-pecl-imagick php70-pecl-imagick-devel php70-pecl-oauth php70-pecl-ssh2 php70-pecl-uuid php70-pecl-yaml php70-pgsql php70-xml php70-xmlrpc php70-zip 
+sudo yum -y install php70 php70-cli php70-common php70-devel php70-json php70-mbstring php70-mcrypt php70-odbc php70-opcache php70-pdo php70-pecl-apcu php70-pecl-apcu-devel php70-pecl-imagick php70-pecl-imagick-devel php70-pecl-oauth php70-pecl-ssh2 php70-pecl-uuid php70-pecl-yaml php70-pgsql php70-xml php70-xmlrpc php70-zip 
 sudo yum -y install git
 
 sudo chkconfig httpd on
