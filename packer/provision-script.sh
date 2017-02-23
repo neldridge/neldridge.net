@@ -14,7 +14,6 @@ sudo yum -y install git
 
 sudo chkconfig httpd on
 
-sudo chown -R apache /var/www
 sudo git clone https://github.com/neldridge/neldridge.net.git /var/www/neldridge.net
 sudo chown -R apache /var/www
 
